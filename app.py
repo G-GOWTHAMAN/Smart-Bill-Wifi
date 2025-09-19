@@ -16,7 +16,7 @@ except ImportError:
 # IMPORTANT: API key must be empty string as Canvas will provide it at runtime.
 # When running locally, you must provide your own API key.
 # Replace "YOUR_API_KEY" with your actual key.
-genai.configure(api_key="AIzaSyBWwrbH9ZuyB2icupMibDbv0JAHeDQyklI")
+genai.configure(api_key="/")
 
 # --- Helper Functions (Same as before) ---
 def generate_random_password(length=8):
@@ -263,3 +263,4 @@ elif page == "AI Dashboard":
             st.success(ai_insight)
     else:
         st.info("Click the button above to get a strategic recommendation based on your data.")
+
